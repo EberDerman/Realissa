@@ -45,7 +45,6 @@ body.background-white {
     display: flex;
     flex-direction: column;
 }
-
 /*-----------------------------navbar--------------------------------------*/
 
 .custom-navbar {
@@ -56,39 +55,75 @@ body.background-white {
     color: white; /* Color de texto blanco para contraste */
 }
 
-.custom-navbar .navbar-toggler {
-    border-color: white; /* Color del borde del botón */
+/* Cambiar color del enlace cuando se pasa el mouse (estado hover) */
+.nav-link:hover {
+    color: blue; /* Color de texto azul al pasar el mouse */
+    
 }
 
-.custom-navbar .dropdown-menu {
-    background-color: grey; /* Fondo del menú desplegable */
+/* Cambiar color del enlace cuando se hace clic (estado activo) */
+.nav-link:active {
+    color: blue; /* Color de texto azul cuando se hace clic */
+  
+}
+
+/* Cambiar color del enlace cuando está en foco (cuando se navega con teclado) */
+.nav-link:focus {
+    color: blue; /* Color de texto azul */
+   
+    text-decoration: none; /* Opcional: eliminar subrayado si es necesario */
+}
+
+/* Cambiar color del enlace dentro del dropdown cuando se hace clic */
+.dropdown-item:active {
+    background-color: #505050; /* Color de fondo deseado cuando el ítem está activo */
+    color: grey; /* Color de texto deseado cuando el ítem está activo */
 }
 
 .custom-navbar .dropdown-item {
-    color: white; /* Color de texto de los ítems del menú desplegable */
+    color: grey; /* Color de texto de los ítems del menú desplegable */
 }
 
 .custom-navbar .dropdown-item:hover {
-    background-color: grey; /* Color de fondo al pasar el ratón sobre los ítems */
+   
+    color: blue; /* Color de texto azul al pasar el ratón sobre los ítems */
 }
 
+/* Ocultar el logo en modo responsive */
 @media (max-width: 992px) {
     #logo {
+        display: none;
+    }
+
+    .collapse {
+        display: none;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-toggler:hover + .collapse,
+    .collapse:hover {
         display: block;
     }
-}
 
+    .navbar-toggler:hover + .collapse .dropdown-menu,
+    .collapse:hover .dropdown-menu {
+        display: none; /* Los dropdowns no se muestran automáticamente */
+    }
+
+    .collapse .nav-item.dropdown:hover .dropdown-menu {
+        display: block; /* Mostrar el dropdown al pasar el mouse sobre el dropdown */
+    }
+}
 
 /* Asegúrate de que los menús se ocultan por defecto */
 .dropdown-menu {
     display: none;
 }
 
-/* Mostrar el menú al pasar el mouse */
+/* Mostrar el menú al pasar el mouse sobre el dropdown */
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
 }
-
 
 
 /*-----------------------------main--------------------------------------*/

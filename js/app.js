@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Función para cargar el contenido del archivo PHP
     function loadContent(url) {
         mainContent.innerHTML = ''; // Limpiar el contenido de <main> antes de cargar el nuevo contenido
-        updateBodyClass(false);
         fetch(url)
             .then(response => response.text())
             .then(data => {
@@ -21,8 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateBodyClass(addClass) {
         if (addClass) {
             body.classList.add('background-white');
+            console.log('Background set to white');
         } else {
             body.classList.remove('background-white');
+            console.log('Background reverted');
         }
     }
 
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.navbar-nav a').forEach(link => {
         link.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
+            console.log(`Link clicked: ${href}`);
 
             // Si el enlace es "Nuestros Diseños"
             if (href === 'nuestrosDisenos') {
