@@ -1,0 +1,227 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;}
+   /* Estilo predeterminado del body */
+body {
+    background-image: url('./../img/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilo para el fondo blanco */
+body.background-white {
+    background-color: white;
+    background-image: none; /* Elimina la imagen de fondo */
+}
+/* El contenedor principal ocupa todo el espacio disponible */
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----------------------------media queries para ajustar el background--------------------------------------*/
+
+@media (max-width: 1023px) {
+    html, body {
+        background-size: contain; /* Ajusta la imagen para que se contenga dentro del fondo en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 767px) {
+    html, body {
+        background-size: cover; /* Vuelve a cubrir todo el fondo si es necesario */
+    }
+}
+
+
+/* El contenedor principal ocupa todo el espacio disponible */
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----------------------------navbar--------------------------------------*/
+
+.custom-navbar {
+    background-color: #6c757d; /* Gris oscuro */
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: white; /* Color de texto blanco para contraste */
+}
+
+.custom-navbar .navbar-toggler {
+    border-color: white; /* Color del borde del botón */
+}
+
+.custom-navbar .dropdown-menu {
+    background-color: grey; /* Fondo del menú desplegable */
+}
+
+.custom-navbar .dropdown-item {
+    color: white; /* Color de texto de los ítems del menú desplegable */
+}
+
+.custom-navbar .dropdown-item:hover {
+    background-color: grey; /* Color de fondo al pasar el ratón sobre los ítems */
+}
+
+@media (max-width: 992px) {
+    #logo {
+        display: block;
+    }
+}
+
+
+/* Asegúrate de que los menús se ocultan por defecto */
+.dropdown-menu {
+    display: none;
+}
+
+/* Mostrar el menú al pasar el mouse */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+/*-----------------------------main--------------------------------------*/
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 100px 0 100px;
+}
+
+/*-----------------------------footer--------------------------------------*/
+
+footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    flex-shrink: 0; /* Evita que el footer se encoja */
+}
+
+.custom-footer {
+    height: 90px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-footer .redes {
+    display: inline-block;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.icono-blanco {
+    height: 30px;
+    width: 30px;
+}
+
+.whatsapp-icon {
+    position: absolute;
+    top: -10px; /* Sobresale 10px hacia arriba */
+    left: 20px;
+    width: 70px;
+    height: 70px;
+    transition: left 0.3s ease, top 0.3s ease; /* Transiciones suaves al cambiar la posición */
+}
+
+/* Estilo para Tablet y Móvil */
+@media (max-width: 1023px) {
+    .custom-footer .redes {
+        margin-right: 30px; /* Espaciado moderado para tablets */
+    }
+    .whatsapp-icon {
+        left: 15px;
+        top: -5px; /* Ajusta la posición vertical */
+        width: 55px;
+        height: 55px;
+    }
+    .icono-blanco {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .custom-footer .redes {
+        margin-right: 10px; /* Espaciado reducido para móviles */
+    }
+    .custom-footer .redes a .icono-blanco {
+        width: 20px; /* Ajusta el tamaño de los íconos en móviles */
+        height: 20px; /* Ajusta el tamaño de los íconos en móviles */
+    }
+    .whatsapp-icon {
+        left: 10px; /* Ajusta la posición horizontal para mantener margen */
+        top: 0px; /* Ajusta la posición vertical */
+        width: 40px;
+        height: 40px;
+    }
+    .icono-blanco {
+        height: 15px;
+        width: 15px;
+    }
+}
+
+/* Estilo para PC */
+@media (min-width: 1024px) {
+    .custom-footer .redes {
+        margin-right: 50px; /* Espaciado amplio para pantallas grandes */
+    }
+    .whatsapp-icon {
+        left: 30px;
+        top: -10px; /* Mantiene la posición vertical en pantallas grandes */
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+/*-----------------------------formulario de contacto-----------------------------------*/
+
+
+.form-control {
+    background-color: white;
+    color: black;
+    border: 1px solid #ced4da;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+    /* Color de las letras del placeholder */
+}
+
+.formulario,
+.contacto {
+    background-color: rgba(128, 128, 128, 0.616);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+} 
+
+
+/*-------------------------------texto plano-----------------------------------*/
+
+.textoComponentes{
+    background-color: rgba(255, 255, 255, 0.616);
+    color: grey;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px;
+}
+.textoComponentes h2{
+    padding-bottom: 50px;
+}
+
