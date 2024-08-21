@@ -1,5 +1,14 @@
 <div class="nuestrosDisenos row">
-    <div id="carruselDisenos" class="carrucel-disenos col-8 carousel slide" data-bs-ride="carousel">
+    <style>
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: grey;
+            border-radius: 6px;
+            filter: none;
+        }
+    </style>
+
+    <div id="carruselDisenos" class="carousel col-8 slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./img/disenos/bariloche.jpeg" class="d-block w-100" alt="Imagen 1">
@@ -11,13 +20,13 @@
                 <img src="./img/disenos/cordoba.jpeg" class="d-block w-100" alt="Imagen 3">
             </div>
             <div class="carousel-item">
-                <img src="./img/disenos/duplex.jpeg" class="d-block w-100" alt="Imagen 3">
+                <img src="./img/disenos/duplex.jpeg" class="d-block w-100" alt="Imagen 4">
             </div>
             <div class="carousel-item">
-                <img src="./img/disenos/marDelPlata.jpeg" class="d-block w-100" alt="Imagen 3">
+                <img src="./img/disenos/marDelPlata.jpeg" class="d-block w-100" alt="Imagen 5">
             </div>
             <div class="carousel-item">
-                <img src="./img/disenos/tucuman.jpeg" class="d-block w-100" alt="Imagen 3">
+                <img src="./img/disenos/tucuman.jpeg" class="d-block w-100" alt="Imagen 6">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carruselDisenos" data-bs-slide="prev">
@@ -37,3 +46,4 @@
         </p>
     </div>
 </div>
+

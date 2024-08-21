@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Función para cargar el contenido del archivo PHP
     function loadContent(url) {
+        mainContent.innerHTML = ''; // Limpiar el contenido de <main> antes de cargar el nuevo contenido
+        updateBodyClass(false);
         fetch(url)
             .then(response => response.text())
             .then(data => {
@@ -34,14 +36,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.preventDefault(); // Evitar el comportamiento por defecto del enlace
                 updateBodyClass(true); // Cambiar el fondo a blanco
                 loadContent('php/nuestrosDisenos.php'); // Cargar el contenido para "Nuestros Diseños"
-            } else if (href && href !== '#' && href !== 'servicios') {
+            } else if (href && href !== '#') {
                 e.preventDefault(); // Evitar el comportamiento por defecto del enlace
                 updateBodyClass(false); // Restaurar el fondo original
                 loadContent(`php/${href}.php`); // Cargar el contenido del archivo PHP correspondiente
-            } else if (href === 'servicios') {
-                e.preventDefault(); // Evitar el comportamiento por defecto del enlace
-                // No cargamos contenido ya que solo se despliega el dropdown
-                updateBodyClass(false); // Restaurar el fondo original al interactuar con el dropdown
             }
         });
     });
