@@ -23,7 +23,7 @@
 
 
     <main id="main-content">
-        <!-- Aquí se cargará el contenido dinámico -->
+    <?php include 'php/inicio.php'; ?>
     </main>
 
 
@@ -39,9 +39,7 @@
     <script src="./js/bootstrap/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 
-    
-    <!--funciones navbar-->
-    <script src="./js/navbar.js"></script>
+
 
     <!--funciones main-->
     <script src="./js/app.js"></script>
