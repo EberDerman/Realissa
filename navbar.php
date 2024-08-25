@@ -33,109 +33,75 @@
     #logo {
         display: none;
     }
-
-    .collapse {
-        display: none;
-        transition: all 0.3s ease;
-    }
-
-    .navbar-toggler:hover + .collapse,
-    .collapse:hover {
-        display: block;
-    }
-
-    .collapse .nav-item.dropdown:hover .dropdown-menu {
-        display: block; /* Mostrar el dropdown al pasar el mouse sobre el dropdown */
-    }
-}
-
-/* Asegúrate de que los menús se ocultan por defecto */
-.dropdown-menu {
-    display: none;
 }
 
 /* Mostrar el menú al pasar el mouse sobre el dropdown */
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
 }
-
-.collapse.show {
-    display: block;
-}
-
-
 </style>
 
 <header>
-<nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <img src="./img/logo realissa.png" alt="Menu" width="30" height="30">
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="./img/logo realissa.png" alt="Menu" width="30" height="30">
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <img id="logo" src="./img/logo realissa.png" alt="logo" width="120" height="100" style="margin-left: 50px;">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="inicio">INICIO</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="quienesSomos">QUIENES SOMOS</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="mision">MISION</a></li>
-                        <li><a class="dropdown-item" href="queHacemos">QUE HACEMOS?</a></li>
-                        <li><a class="dropdown-item" href="aspectosPositivos">ASPECTOS POSITIVOS</a></li>
-                        <li><a class="dropdown-item" href="trabajoEnEquipo">TRABAJO EN EQUIPO</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="servicios">SERVICIOS</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="crowfunding">CROWDFUNDING INMOBILIARIO</a></li>
-                        <li><a class="dropdown-item" href="facilitamos">FACILITAMOS TU INVERSION</a></li>
-                        <li><a class="dropdown-item" href="mercadoIdeal">MERCADO IDEAL</a></li>
-                        <li><a class="dropdown-item" href="buenasEstrategias">BUENAS ESTRATEGIAS</a></li>
-                        <li><a class="dropdown-item" href="lotes">LOTES</a></li>
-                        <li><a class="dropdown-item" href="realState">REAL STATE</a></li>
-                        <li><a class="dropdown-item" href="diferenciales">DIFERENCIALES</a></li>
-                        <li><a class="dropdown-item" href="disclaimer">DISCLAIMER</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="nuestrosDisenos">NUESTROS DISEÑOS</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <img id="logo" src="./img/logo realissa.png" alt="logo" width="120" height="100" style="margin-left: 50px;">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="inicio">INICIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="quienesSomos">QUIENES SOMOS</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="mision">MISION</a></li>
+                            <li><a class="dropdown-item" href="queHacemos">QUE HACEMOS?</a></li>
+                            <li><a class="dropdown-item" href="aspectosPositivos">ASPECTOS POSITIVOS</a></li>
+                            <li><a class="dropdown-item" href="trabajoEnEquipo">TRABAJO EN EQUIPO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="servicios">SERVICIOS</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="crowfunding">CROWDFUNDING INMOBILIARIO</a></li>
+                            <li><a class="dropdown-item" href="facilitamos">FACILITAMOS TU INVERSION</a></li>
+                            <li><a class="dropdown-item" href="mercadoIdeal">MERCADO IDEAL</a></li>
+                            <li><a class="dropdown-item" href="buenasEstrategias">BUENAS ESTRATEGIAS</a></li>
+                            <li><a class="dropdown-item" href="lotes">LOTES</a></li>
+                            <li><a class="dropdown-item" href="realStateCapeCoral">REAL STATE: CAPE CORAL</a></li>
+                            <li><a class="dropdown-item" href="realStateLehighAcres">REAL STATE: LEHIGH ACRES</a></li>
+                            <li><a class="dropdown-item" href="diferenciales">DIFERENCIALES</a></li>
+                            <li><a class="dropdown-item" href="disclaimer">DISCLAIMER</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="nuestrosDisenos">NUESTROS DISEÑOS</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 </header>
 
 <script>
+// Script para ocultar el menú en modo responsive al hacer clic en un enlace
 document.addEventListener('DOMContentLoaded', function () {
-    var navbarToggler = document.querySelector('.navbar-toggler');
-    var collapse = document.querySelector('.collapse');
+    var navLinks = document.querySelectorAll('.nav-link, .dropdown-item'); // Incluir todos los enlaces
+    var navbarCollapse = document.getElementById('navbarTogglerDemo03');
 
-    navbarToggler.addEventListener('mouseover', function () {
-        collapse.classList.add('show');
-    });
-
-    collapse.addEventListener('mouseleave', function (event) {
-        if (!collapse.contains(event.relatedTarget)) {
-            collapse.classList.remove('show');
-        }
-    });
-
-    collapse.addEventListener('mouseover', function () {
-        collapse.classList.add('show');
-    });
-
-    collapse.addEventListener('click', function (event) {
-        if (event.target.classList.contains('nav-link')) {
-            collapse.classList.remove('show');
-        }
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            if (window.innerWidth < 992) {
+                var collapse = new bootstrap.Collapse(navbarCollapse, {
+                    toggle: true
+                });
+                collapse.hide();
+            }
+        });
     });
 });
 </script>
-
-
