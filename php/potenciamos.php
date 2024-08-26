@@ -1,3 +1,10 @@
+<style>
+     .numero{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+</style>
+
+
 <div class="container mt-5">
 
 
@@ -9,7 +16,7 @@
 
         <h4>Tipos de terrenos</h4>
         <P>
-            En Cape Coral se pueden encontrar 3 tipos de lotes:
+            En Cape Coral se pueden encontrar <span class="numero">3</span> tipos de lotes:
             Secos. Sin acceso a canales.
             Con canales internos navegables.
             Con acceso a canales externos y salida directa al mar.
@@ -17,11 +24,11 @@
             posterior construcción.</P>
         <h4>Casa estandarizada</h4>
         <ul class="list-unstyled">
-            <li>Casa de 3 dormitorios con 2 baños</li>
-            <li>180 m2 cubiertos</li>
-            <li>129 m2 con aire acondicionado</li>
+            <li>Casa de <span class="numero">3</span> dormitorios con <span class="numero">2</span> baños</li>
+            <li><span class="numero">180 m2</span> cubiertos</li>
+            <li><span class="numero">129 m2</span> con aire acondicionado</li>
             <li>Master Suite </li>
-            <li>Cochera para 2 vehículos</li>
+            <li>Cochera para <span class="numero">2</span> vehículos</li>
         </ul>
         <h4>Búsqueda y evaluación de lotes</h4>
         <ul class="list-unstyled">

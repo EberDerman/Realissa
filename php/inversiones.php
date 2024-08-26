@@ -1,3 +1,93 @@
+<style>
+    .numero {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .customs-items {
+        list-style: none; /* Elimina los puntos de lista predeterminados */
+        display: flex; /* Flexbox para alinear la imagen y el texto */
+        align-items: center; /* Alinea el contenido al centro verticalmente */
+        justify-content: center;
+        height: 65px;
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-size: 50px; /* Ajusta el tamaño de la imagen */
+        background-position: left center; /* Posiciona la imagen a la izquierda y centrada verticalmente */
+        margin-bottom: 10px; /* Espacio inferior entre los ítems */
+        transition: height 0.3s ease, background-size 0.3s ease; /* Transiciones suaves para altura y tamaño de imagen */
+        gap: 20px;
+    }
+
+    /* Imágenes específicas para cada item */
+    .compra {
+        background-image: url('./Iconos/iconosrealissa/r21.png');
+    }
+
+    .permisologia {
+        background-image: url('./Iconos/iconosrealissa/r7.png');
+    }
+
+    .construccion {
+        background-image: url('./Iconos/iconosrealissa/r8.png');
+    }
+
+    .venta {
+        background-image: url('./Iconos/iconosrealissa/r9.png');
+    }
+
+    /* Media Queries para ajuste gradual */
+    @media (max-width: 1200px) {
+        .customs-items {
+            height: 50px;
+            background-size: 45px;
+            padding-left: 55px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .customs-items {
+            height: 40px;
+            background-size: 35px;
+            padding-left: 45px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .customs-items {
+            height: 30px;
+            background-size: 25px;
+            padding-left: 35px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .customs-items {
+            height: 20px;
+            background-size: 15px;
+            padding-left: 25px;
+        }
+    }
+
+    /* Estilo para los párrafos */
+    ul li + p {
+        margin-top: 0;
+        margin-left: 60px; /* Alinea el párrafo debajo del texto del li */
+    }
+
+    /* Ajuste del párrafo para dispositivos móviles */
+    @media (max-width: 768px) {
+        ul li + p {
+            margin-left: 35px; /* Alinea el párrafo debajo del texto del li para pantallas pequeñas */
+        }
+    }
+
+    @media (max-width: 576px) {
+        ul li + p {
+            margin-left: 25px; /* Alinea el párrafo debajo del texto del li para pantallas extra pequeñas */
+        }
+    }
+</style>
+
+
 <div class="container mt-5">
 
 
@@ -9,25 +99,32 @@
 
 
         <p>Guiamos la ruta de tus inversiones</p>
+        <li class="customs-items compra">
+            <h4>FASE <span class="numero">1</span></h4>
+            <h4>COMPRA DEL LOTE</h4>
+        </li>
+        <p>Aproximadamente de <span class="numero">30</span> días.</p>
 
-        <h4>FASE 1</h4>
-        <h4>COMPRA DEL LOTE</h4>
-        <p>Aproximadamente de 30 días.</p>
+        <li class="customs-items permisologia">
+            <h4>FASE <span class="numero">2</span></h4>
+            <h4>PERMISOLOGÍA</h4>
+        </li>
+        <p>Aproximadamente <span class="numero">6 a 7</span> meses.</p>
 
-        <h4>FASE 2</h4>
-        <h4>PERMISOLOGÍA</h4>
-        <p>Aproximadamente 6 a 7 meses.</p>
+        <li class="customs-items construccion">
+            <h4>FASE <span class="numero">3</span></h4>
+            <h4>CONSTRUCCIÓN</h4>
+        </li>
+        <p>Aproximadamente <span class="numero">5 a 6</span> meses.</p>
 
-        <h4>FASE 3</h4>
-        <h4>CONSTRUCCIÓN</h4>
-        <p>Aproximadamente 5 a 6 meses.</p>
-
-        <h4>FASE 4</h4>
-        <h4>VENTA DE LA PROPIEDAD</h4>
-        <p>Aproximadamente 1 mes.</p>
+        <li class="customs-items venta">
+            <h4>FASE <span class="numero">4</span></h4>
+            <h4>VENTA DE LA PROPIEDAD</h4>
+        </li>
+        <p>Aproximadamente <span class="numero">1</span> mes.</p>
 
         <h4>TIEMPO TOTAL ESTIMADO:</h4>
-        <p>de 12 a 14 meses. Para lotes en stock con permisología aprobada, el tiempo estimado es de 8 meses aproximadamente.</p>
+        <p>de <span class="numero">12 a 14</span> meses. Para lotes en stock con permisología aprobada, el tiempo estimado es de <span class="numero">8</span> meses aproximadamente.</p>
 
         <p>El Proceso de Seguimiento Durante el período de Permisología se presentarán informes cada dos meses aproximadamente.</p>
 

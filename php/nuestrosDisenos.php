@@ -91,6 +91,12 @@
 
         }
     }
+  
+     .numero{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
 </style>
 
 <div class="nuestrosDisenos row">
@@ -138,7 +144,7 @@
             los países en los que estamos presentes para potenciar la
             construcción de viviendas conforme a las posibilidades de
             nuestros clientes, teniendo en cuenta el acceso al
-            financiamiento, el valor de la unidad, la revalorización y la 09 capacidad de pago del consumidor final
+            financiamiento, el valor de la unidad, la revalorización y la <span class="numero">09</span> capacidad de pago del consumidor final
         </p>
     </div>
 </div>

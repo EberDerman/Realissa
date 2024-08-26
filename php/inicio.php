@@ -29,7 +29,7 @@
         <div class="col-md-5">
             <div class="contacto">
                 <h4>Contacto</h4>
-                <p>
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
                     (USA) +1 (239) 8348617 / +1 (239) 2148904<br>
                     realissainvestments@gmail.com<br>
                     606 SE 10TH St., Cape Coral, FL 33909<br>

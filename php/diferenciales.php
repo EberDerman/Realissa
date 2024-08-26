@@ -1,3 +1,10 @@
+<style>
+     .numero{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+</style>
+
+
 <div class="container mt-5">
 
 
@@ -5,13 +12,13 @@
         <h2 class="mb-4">Diferenciales</h2>
 
         <p>
-            Top 5 de mercado inmobiliarios de USA
-            Precio medio de mercado USD 446.350
-            Tiempo de venta promedio 30 días.
+            Top <span class="numero">5</span> de mercado inmobiliarios de USA
+            Precio medio de mercado USD <span class="numero">446.350</span>
+            Tiempo de venta promedio <span class="numero">30</span> días.
             La demanda de vivienda supera la oferta
-            Cape Coral también conocido como la "Venecia americana", ya que cuenta con 640 km de canales
+            Cape Coral también conocido como la "Venecia americana", ya que cuenta con <span class="numero">640</span> km de canales
             navegables; algunos de los cuales tienen acceso al golfo de México.
-            Según la Oficina de Investigación Económica de Florida, en proyecciones de crecimiento de la población a 30 años, el Condado de Lee (Cape Coral) crecerá un 58.8% hasta 2045.
+            Según la Oficina de Investigación Económica de Florida, en proyecciones de crecimiento de la población a <span class="numero">30</span> años, el Condado de Lee (Cape Coral) crecerá un <span class="numero">58.8</span>% hasta <span class="numero">2045</span>.
             Confirmando así el mayor crecimiento de un condado en Florida.
         </p>
     </div>

@@ -92,6 +92,10 @@
             margin-left: 25px; /* Alinea el párrafo debajo del texto del li para pantallas extra pequeñas */
         }
     }
+
+    .numero{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 </style>
 
 
@@ -103,16 +107,16 @@
             <ul class="list-unstyled">
                 <li>Costa Oeste de Florida, sobre el Golfo de México.</li>
                 <li>Pertenece al condado de Lee.</li>
-                <li>Población actual: 750,000 habitantes.</li>
+                <li>Población actual: <span class="numero">750,000</span> habitantes.</li>
             </ul>
             <h6 class="m-4"><strong>Puntos cercanos</strong></h6>
             <!-- Agregado 'list-unstyled' para eliminar los puntos -->
             <ul class="list-unstyled">
                 <!-- Botones para actualizar el mapa -->
-                <li><button class="btn btn-primary" style="margin-top: 10px;" onclick="showMap('Fort')">Fort Myers 9 mi.</button></li>
-                <li><button class="btn btn-primary" style="margin-top: 10px;" onclick="showMap('Naples')">Naples 43 mi.</button></li>
-                <li><button class="btn btn-primary" style="margin-top: 10px;" onclick="showMap('Miami')">Miami 157 mi.</button></li>
-                <li><button class="btn btn-primary" style="margin-top: 10px;" onclick="showMap('Orlando')">Orlando 166 mi.</button></li>
+                <li><button class="btn btn-primary" style="margin-top: 10px;" onclick="showMap('Fort')">Fort Myers <span class="numero">9</span> mi.</button></li>
+                <li><button class="btn btn-primary" style="margin-top: 10px;" onclick="showMap('Naples')">Naples <span class="numero">43</span> mi.</button></li>
+                <li><button class="btn btn-primary" style="margin-top: 10px;" onclick="showMap('Miami')">Miami <span class="numero">157</span> mi.</button></li>
+                <li><button class="btn btn-primary" style="margin-top: 10px;" onclick="showMap('Orlando')">Orlando <span class="numero">166</span> mi.</button></li>
             </ul>
             <div id="mapa" class="d-flex justify-content-center align-items-center">
                 <!-- Placeholder para el mapa que se actualizará -->
@@ -139,11 +143,11 @@
                 <li class="custom-list-item casas"><strong>CASAS UNIFAMILIARES</strong></li>
                 <p>La mayoría de las viviendas son casas sin costos de HOA / Expensas mensuales.</p>
                 <li class="custom-list-item costo-vida"><strong>MENOR COSTO DE VIDA</strong></li>
-                <p>El costo de vida en Cape Coral es un 4% más bajo que el promedio americano.</p>
+                <p>El costo de vida en Cape Coral es un <span class="numero">4</span>% más bajo que el promedio americano.</p>
                 <li class="custom-list-item impuestos"><strong>MENOS IMPUESTOS</strong></li>
                 <p>No hay impuesto a las ganancias personales estatal.</p>
                 <li class="custom-list-item salud"><strong>SALUD</strong></li>
-                <p>El costo de la salud es un 5% por debajo del promedio nacional.</p>
+                <p>El costo de la salud es un <span class="numero">5</span>% por debajo del promedio nacional.</p>
             </ul>
         </div>
     </div>

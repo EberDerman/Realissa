@@ -3,6 +3,13 @@
 
 .custom-navbar {
     background-color: #6c757d; /* Gris oscuro */
+
+}
+nav{
+font-size: large;
+}
+.navbar-nav {
+    padding-right: 150px;
 }
 
 .custom-navbar .navbar-nav .nav-link {
@@ -87,7 +94,7 @@
                             data-bs-toggle="dropdown" aria-expanded="false">+</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                           
-                            <li><a class="dropdown-item" href="potenciamos">Potenciamos tu Trabajo</a></li>
+                            <li><a class="dropdown-item" href="potenciamos">POTENCIAMOS TU TRABAJO</a></li>
                             <li><a class="dropdown-item" href="inversiones">INVERSIONES</a></li>
                            
                             <li><a class="dropdown-item" href="terminos">TERMINOS</a></li>
