@@ -1,3 +1,58 @@
+<style>
+    .facilitamos-items {
+        display: flex;
+
+    }
+    .facilitamos-items img{
+        width: 100px;
+        height: 100px;
+
+    }
+
+
+     /* Media Queries para ajuste gradual */
+     @media (max-width: 1200px) {
+        .facilitamos-items img {
+            width: 80px;
+            height: 80px;
+        }
+
+        
+    }
+
+    @media (max-width: 992px) {
+        .facilitamos-items img {
+            width: 60px;
+            height: 60px;
+        }
+
+       
+    }
+
+    @media (max-width: 768px) {
+        .facilitamos-items {
+            justify-content: center; /* Centra los elementos en pantallas más pequeñas */
+        }
+
+        .facilitamos-items img {
+            width: 50px;
+            height: 50px;
+        }
+
+       
+    }
+
+    @media (max-width: 576px) {
+        .facilitamos-items img {
+            width: 40px;
+            height: 40px;
+        }
+
+      
+    }
+</style>
+
+
 <div class="container mt-5">
 
 
@@ -11,8 +66,8 @@
             documento a través de medios digitales con la total seguridad y
             aval legal para brindarte total tranquilidad y transparencia.
         </p>
-        <div>
-            <div><img src="" alt=""></div>
+        <div class="facilitamos-items">
+            <img src="./Iconos/iconosrealissa/r4.png" alt="lupa">
             <div>
                 <h4>CONFORMACIÓN DE UNA LLC
                     (LIMITED LIABILITY COMPANY)</h4>
@@ -23,8 +78,8 @@
                 </p>
             </div>
         </div>
-        <div>
-            <div><img src="" alt=""></div>
+        <div class="facilitamos-items">
+            <img src="./Iconos/iconosrealissa/r5.png" alt="negocios">
             <div>
                 <h4>
                     OPERATING AGREEMENT (CONTRATO SOCIAL)
