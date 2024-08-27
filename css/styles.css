@@ -2,10 +2,12 @@
 
 @font-face {
     font-family: 'Heading Pro Trial';
-    src: url('./../fonts/Heading-Pro-Bold-trial.ttf') format('truetype'); /* Corrige la ruta aquí */
+    src: url('./../fonts/Heading-Pro-Bold-trial.ttf') format('truetype');
+    /* Corrige la ruta aquí */
     font-weight: normal;
     font-style: normal;
 }
+
 /* Aplica la fuente a los elementos */
 body {
     font-family: 'Heading Pro Trial', sans-serif;
@@ -21,101 +23,103 @@ body {
     flex-direction: column;
 
 
-    /* Estilo predeterminado del body */
-    body {
-        background-image: url('./../img/background.jpeg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
 
-    /* Estilo para el fondo blanco */
-    body.background-white {
-        background-color: white;
-        background-image: none;
-        /* Elimina la imagen de fondo */
-    }
+    background-image: url('./../img/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
-    /* El contenedor principal ocupa todo el espacio disponible */
-    .wrapper {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
+/* Estilo para el fondo blanco */
+body.background-white {
+    background-color: white;
+    background-image: none;
+    /* Elimina la imagen de fondo */
+}
+
+/* El contenedor principal ocupa todo el espacio disponible */
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 
 
-    /*-----------------------------main--------------------------------------*/
+h1,h2,h3,h4,h5,h6{
+    color: grey !important;
+}
+/*-----------------------------main--------------------------------------*/
 
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 100px;
+    /* Predeterminado para PC */
+}
+
+/* Media query para tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
     main {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 100px;
-        /* Predeterminado para PC */
+        margin: 0 50px;
+        /* Ajuste para tabletas */
     }
+}
 
-    /* Media query para tablets */
-    @media (max-width: 1024px) and (min-width: 768px) {
-        main {
-            margin: 0 50px;
-            /* Ajuste para tabletas */
-        }
+/* Media query para móviles */
+@media (max-width: 768px) {
+    main {
+        margin: 0 10px;
+        /* Ajuste para móviles */
     }
+}
 
-    /* Media query para móviles */
-    @media (max-width: 768px) {
-        main {
-            margin: 0 10px;
-            /* Ajuste para móviles */
-        }
-    }
+/*-----------------------------formulario de contacto-----------------------------------*/
 
-    /*-----------------------------formulario de contacto-----------------------------------*/
+.form-control {
+    background-color: white;
+    color: black;
+    border: 1px solid #ced4da;
+}
 
-    .form-control {
-        background-color: white;
-        color: black;
-        border: 1px solid #ced4da;
-    }
+.form-control::placeholder {
+    color: #6c757d;
+    /* Color de las letras del placeholder */
+}
 
-    .form-control::placeholder {
-        color: #6c757d;
-        /* Color de las letras del placeholder */
-    }
+.formulario,
+.contacto {
 
-    .formulario,
-    .contacto {
+    background-color: rgba(255, 255, 255, 0.616);
+    /* Color de fondo con transparencia */
+    color: black;
+    /* Color de texto blanco */
+    text-align: center;
+    /* Texto centrado */
+    border-radius: 6px;
+    /* Bordes redondeados */
+    padding: 20px;
+    /* Espacio interno alrededor del contenido */
+    margin: 20px auto;
+    /* Espacio alrededor del contenedor y centrado automático */
+    max-width: 600px;
+    /* Ancho máximo del contenedor para dispositivos más grandes */
 
-        background-color: rgba(255, 255, 255, 0.616);
-        /* Color de fondo con transparencia */
-        color: grey;
-        /* Color de texto blanco */
-        text-align: center;
-        /* Texto centrado */
-        border-radius: 6px;
-        /* Bordes redondeados */
-        padding: 20px;
-        /* Espacio interno alrededor del contenido */
-        margin: 20px auto;
-        /* Espacio alrededor del contenedor y centrado automático */
-        max-width: 600px;
-        /* Ancho máximo del contenedor para dispositivos más grandes */
-
-    }
+}
 
 
-    /*-------------------------------texto plano-----------------------------------*/
+/*-------------------------------texto plano-----------------------------------*/
 
-    .textoComponentes {
-        background-color: rgba(255, 255, 255, 0.616);
-        color: grey;
-        text-align: center;
-        border-radius: 6px;
-        padding: 50px;
-    }
+.textoComponentes {
+    background-color: rgba(255, 255, 255, 0.616);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px;
+}
 
-    .textoComponentes h2 {
-        padding-bottom: 50px;
-    }}
+.textoComponentes h2 {
+    padding-bottom: 50px;
+}
