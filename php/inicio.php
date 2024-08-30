@@ -14,15 +14,18 @@
         width: 100%;
         position: absolute;
     }
+    .numero {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 </style>
 
 
-<div class="container mt-5">
+<div class="container mt-5" >
     <div class="row">
         <!-- Columna para el formulario -->
-        <div class="col-md-7 mb-4 formulario">
+        <div class="col-md-7 mb-4 formulario numero">
             <h2 class="mb-4">Escríbenos</h2>
-            <form action="" method="post">
+            <form action="./process_form.php" method="post">
                 <div class="row mb-3">
                     <div class="col">
                         <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
@@ -48,7 +51,7 @@
         <div class="col-md-5">
             <div class="contacto">
                 <h2>Contacto</h2>
-                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                <p class="numero">
                     (USA) +1 (239) 8348617 / +1 (239) 2148904<br>
                     realissainvestments@gmail.com<br>
                     606 SE 10TH St., Cape Coral, FL 33909<br>

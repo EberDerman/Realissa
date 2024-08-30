@@ -102,13 +102,13 @@ footer {
     </div>
     <div class="redes">
         
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="https://www.instagram.com/realissa.ok">
             <img src="./Iconos/instagram-realissa.png" alt="Instagram" class="icono-blanco" >
         </a>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="https://www.facebook.com/people/Realissa/100083621102094/?mibextid=JRoKGi">
             <img src="./Iconos/face-realissa.png" alt="Facebook" class="icono-blanco" >
         </a>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="https://www.linkedin.com/company/realissa/">
             <img src="./Iconos/linkeding-realissa.png" alt="LinkedIn" class="icono-blanco" >
         </a>
         <a class="navbar-brand" href="#">

@@ -3,7 +3,8 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '../vendor/autoload.php'; // Ruta relativa al autoloader desde el directorio `php/form`
+
+require './vendor/autoload.php'; // Ruta relativa al autoloader desde el directorio `php/form`
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = htmlspecialchars($_POST['nombre']);
@@ -33,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 */
         // Configuración del correo
         $mail->setFrom($email, "$nombre $apellido");
-        $mail->addAddress('eber.l.derman@gmail.com'); //destinatarios de correo electronico
+        $mail->addAddress('eber_em@hotmail.com'); //destinatarios de correo electronico
         $mail->isHTML(true);
         $mail->Subject = "Nuevo mensaje de $nombre $apellido desde el formulario";
         $mail->Body    = "Nombre: $nombre<br>Apellido: $apellido<br>Email: $email<br>Celular: $celular<br>Mensaje:<br>$mensaje";
