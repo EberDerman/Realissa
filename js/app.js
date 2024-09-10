@@ -27,24 +27,39 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Agregar eventos de clic a todos los enlaces de navegación
-    document.querySelectorAll('.navbar-nav a').forEach(link => {
-        link.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            console.log(`Link clicked: ${href}`);
+  // Agregar eventos de clic a todos los enlaces de navegación
+document.querySelectorAll('.navbar-nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); // Evitar el comportamiento por defecto del enlace
+        
+        const href = this.getAttribute('href');
+        console.log(`Link clicked: ${href}`);
 
-            // Si el enlace es "Nuestros Diseños"
-            if (href === 'nuestrosDisenos') {
-                e.preventDefault(); // Evitar el comportamiento por defecto del enlace
+           // Verificar el valor del href y cargar el contenido adecuado
+           switch (href) {
+            case 'nuestrosDisenos':
                 updateBodyClass(true); // Cambiar el fondo a blanco
                 loadContent('php/nuestrosDisenos.php'); // Cargar el contenido para "Nuestros Diseños"
-            } else if (href && href !== '#') {
-                e.preventDefault(); // Evitar el comportamiento por defecto del enlace
-                updateBodyClass(false); // Restaurar el fondo original
-                loadContent(`php/${href}.php`); // Cargar el contenido del archivo PHP correspondiente
-            }
-        });
+                break;
+            case 'nuestrosDisenosEng':
+                updateBodyClass(true); // Cambiar el fondo a blanco
+                loadContent('php/nuestrosDisenosEng.php'); // Cargar el contenido para "Nuestros Diseños" en inglés
+                break;
+            case 'indexEsp':
+                window.location.href = './indexEsp.php'; // Redirigir a indexEsp.php
+                break;
+            case 'indexEng':
+                window.location.href = './indexEng.php'; // Redirigir a indexEng.php
+                break;
+            default:
+                if (href && href !== '#') {
+                    updateBodyClass(false); // Restaurar el fondo original
+                    loadContent(`php/${href}.php`); // Cargar el contenido del archivo PHP correspondiente
+                }
+                break;
+        }
     });
+});
 
     // Restaurar el color de fondo cuando el dropdown de servicios se despliega
     document.querySelectorAll('.dropdown-menu').forEach(menu => {

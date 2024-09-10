@@ -69,40 +69,40 @@
                 <img id="logo" src="./img/logo realissa.png" alt="logo" width="120" height="100" style="margin-left: 50px;">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="inicio">INICIO</a>
+                        <a class="nav-link" href="inicioEng">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="quienesSomos" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">QUIENES SOMOS</a>
+                        <a class="nav-link dropdown-toggle" href="quienesSomosEng" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">ABOUT US</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="mision">MISION</a></li>
-                            <li><a class="dropdown-item" href="queHacemos">QUE HACEMOS?</a></li>
-                            <li><a class="dropdown-item" href="aspectosPositivos">ASPECTOS POSITIVOS</a></li>
-                            <li><a class="dropdown-item" href="trabajoEnEquipo">TRABAJO EN EQUIPO</a></li>
+                            <li><a class="dropdown-item" href="misionEng">MISSION</a></li>
+                            <li><a class="dropdown-item" href="queHacemosEng">WHAT WE DO?</a></li>
+                            <li><a class="dropdown-item" href="aspectosPositivosEng">POSITIVE ASPECTS</a></li>
+                            <li><a class="dropdown-item" href="trabajoEnEquipoEng">TEAMWORK</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="servicios" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">SERVICIOS</a>
+                        <a class="nav-link dropdown-toggle" href="serviciosEng" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">SERVICES</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="crowfunding">CROWDFUNDING INMOBILIARIO</a></li>
-                            <li><a class="dropdown-item" href="facilitamos">FACILITAMOS TU INVERSION</a></li>
-                            <li><a class="dropdown-item" href="lotes">LOTES</a></li>
-                            <li><a class="dropdown-item" href="realStateCapeCoral">REAL STATE: CAPE CORAL</a></li>
-                            <li><a class="dropdown-item" href="realStateLehighAcres">REAL STATE: LEHIGH ACRES</a></li>
-                            <li><a class="dropdown-item" href="diferenciales">DIFERENCIALES</a></li>
+                            <li><a class="dropdown-item" href="crowfundingEng">REAL ESTATE CROWDFUNDING</a></li>
+                            <li><a class="dropdown-item" href="facilitamosEng">WE FACILITATE YOUR INVESTMENT</a></li>
+                            <li><a class="dropdown-item" href="lotesEng">LOTS</a></li>
+                            <li><a class="dropdown-item" href="realStateCapeCoralEng">REAL STATE: CAPE CORAL</a></li>
+                            <li><a class="dropdown-item" href="realStateLehighAcresEng">REAL STATE: LEHIGH ACRES</a></li>
+                            <li><a class="dropdown-item" href="diferencialesEng">DIFFERENTIATORS</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="nuestrosDisenos">NUESTROS DISEÑOS</a>
+                        <a class="nav-link" href="nuestrosDisenosEng">OUR DESIGNS</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">+</a>
+                            data-bs-toggle="dropdown" aria-expanded="false">MORE</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="potenciamos">POTENCIAMOS TU TRABAJO</a></li>
-                            <li><a class="dropdown-item" href="inversiones">INVERSIONES</a></li>
-                            <li><a class="dropdown-item" href="terminos">TERMINOS</a></li>
+                            <li><a class="dropdown-item" href="potenciamosEng">WE ENHANCE YOUR WORK</a></li>
+                            <li><a class="dropdown-item" href="inversionesEng">INVESTMENTS</a></li>
+                            <li><a class="dropdown-item" href="terminosEng">TERMS</a></a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -111,6 +111,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="indexEng"><img src="img/usa.png" alt="" class="img-fluid m-2" style="height: 20px;"></a>
                     </li>
+
 
                 </ul>
             </div>

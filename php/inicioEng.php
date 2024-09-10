@@ -24,7 +24,7 @@
     <div class="row">
         <!-- Columna para el formulario -->
         <div class="col-md-7 mb-4 formulario numero">
-            <h2 class="mb-4">Escríbenos</h2>
+            <h2 class="mb-4">Contact Us</h2>
             <form action="./process_form.php" method="post">
                 <div class="row mb-3">
                     <div class="col">
@@ -43,14 +43,14 @@
                 <div class="mb-3">
                     <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
                 </div>
-                <button type="submit" onclick="sendEmail()" class="btn btn-primary">Enviar</button>
+                <button type="submit" onclick="sendEmail()" class="btn btn-primary">Send</button>
             </form>
         </div>
 
         <!-- Columna para contacto -->
         <div class="col-md-5">
             <div class="contacto">
-                <h2>Contacto</h2>
+                <h2>Contact</h2>
                 <p class="numero">
                     (USA) +1 (239) 8348617 / +1 (239) 2148904<br>
                     realissainvestments@gmail.com<br>
