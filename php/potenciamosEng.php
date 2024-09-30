@@ -16,7 +16,7 @@
         <h4>Types of Lots</h4>
         <p>
             In Cape Coral, you can find <span class="numero">3</span> types of lots:
-        <ul>
+        <ul class="list-unstyled">
             <li>Dry lots. No canal access.</li>
             <li>Lots with navigable internal canals.</li>
             <li>Lots with access to external canals and direct sea access.</li>

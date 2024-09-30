@@ -92,11 +92,11 @@ main {
 .formulario,
 .contacto {
 
-    background-color: rgba(255, 255, 255, 0.616);
+    background-color: rgba(255, 255, 255, 0.80);
     /* Color de fondo con transparencia */
     color: black;
     /* Color de texto blanco */
-    text-align: center;
+    text-align: left;
     /* Texto centrado */
     border-radius: 6px;
     /* Bordes redondeados */
@@ -113,13 +113,19 @@ main {
 /*-------------------------------texto plano-----------------------------------*/
 
 .textoComponentes {
-    background-color: rgba(255, 255, 255, 0.616);
+    background-color: rgba(255, 255, 255, 0.80);
     color: black;
-    text-align: center;
+    
     border-radius: 6px;
     padding: 50px;
 }
+.textoComponentes p {
+    text-align: left;
+}
+
 
 .textoComponentes h2 {
     padding-bottom: 50px;
+    text-align: center;
+
 }

@@ -24,8 +24,8 @@
     <div class="row">
         <!-- Columna para el formulario -->
         <div class="col-md-7 mb-4 formulario numero">
-            <h2 class="mb-4">Escríbenos</h2>
-            <form action="./process_form.php" method="post">
+            <h2 class="mb-4 text-center">Escríbenos</h2>
+            <form action="form/process_form.php" method="post">
                 <div class="row mb-3">
                     <div class="col">
                         <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
@@ -50,7 +50,7 @@
         <!-- Columna para contacto -->
         <div class="col-md-5">
             <div class="contacto">
-                <h2>Contacto</h2>
+                <h2 class="text-center">Contacto</h2>
                 <p class="numero">
                     (USA) +1 (239) 8348617 / +1 (239) 2148904<br>
                     realissainvestments@gmail.com<br>

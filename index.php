@@ -76,15 +76,18 @@
     </header>
 
     <main class="container text-center">
-        <div class="row g-4 justify-content-center">
-            <div class="col-12 col-md-6 mb-4 textoComponentes">
+        <div class="row g-4 justify-content-center m-3">
+            <div class="col-12 col-md-5 mb-4 textoComponentes">
                 <div class="espanol">
                     <h1>Bienvenido a Reallissa</h1>
                     <a href="indexEsp.php"><img src="img/españa.png" alt="" class="img-fluid"></a>
                     <h3>Click en la bandera para elegir idioma</h3>
                 </div>
             </div>
-            <div class="col-12 col-md-6 mb-4 textoComponentes">
+            <div class="col-12 col-md-2 mb-4">
+                
+            </div>
+            <div class="col-12 col-md-5 mb-4 textoComponentes">
                 <div class="english">
                     <h1>Welcome to Reallissa</h1>
                     <a href="indexEng.php"><img src="img/usa.png" alt="" class="img-fluid"></a>

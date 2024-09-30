@@ -1,0 +1,15 @@
+# Habilitar motor de reescritura
+RewriteEngine On
+
+# Redirigir a HTTPS solo si no es localhost (esto evita redirigir a HTTPS en local)
+RewriteCond %{HTTP_HOST} !^localhost [NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Reglas para las URLs amigables
+RewriteRule ^home$ /inicioEng.php [L]
+RewriteRule ^inicio$ /inicio.php [L]
+
+# Asegurarse de que los archivos y directorios existentes no se vean afectados
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d

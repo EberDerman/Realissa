@@ -3,8 +3,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-
-require './vendor/autoload.php'; // Ruta relativa al autoloader desde el directorio `php/form`
+require './vendor/autoload.php'; // Asegúrate de que esta ruta sea correcta
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = htmlspecialchars($_POST['nombre']);
@@ -15,26 +14,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $mail = new PHPMailer(true);
     try {
-
         // Configuración del servidor SMTP
         $mail->isSMTP();
-        $mail->Host = 'localhost'; // Utiliza localhost para Mercury
-        $mail->SMTPAuth = false;   // No necesitas autenticación
-        $mail->Port = 25;          // Puerto por defecto para SMTP sin autenticación
+        $mail->Host = 'localhost'; // Usando localhost para Mercury
+        $mail->SMTPAuth = false;   // No autenticación
+        $mail->Port = 25;          // Puerto 25 por defecto para SMTP sin autenticación
 
-        /*
-        // Configuración del servidor SMTP
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';  // SMTP de Gmail
-        $mail->SMTPAuth = true;
-        $mail->Username = 'your-email@gmail.com'; // Tu correo de Gmail
-        $mail->Password = 'your-password'; // Tu contraseña o contraseña de aplicación
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;//Si tiene protocolo ssl(candado verde) agregar ssl, si no tiene agregar tls
-        $mail->Port = 587;
-*/
         // Configuración del correo
         $mail->setFrom($email, "$nombre $apellido");
-        $mail->addAddress('eber_em@hotmail.com'); //destinatarios de correo electronico
+        $mail->addAddress('eber_em@hotmail.com'); // Destinatario
         $mail->isHTML(true);
         $mail->Subject = "Nuevo mensaje de $nombre $apellido desde el formulario";
         $mail->Body    = "Nombre: $nombre<br>Apellido: $apellido<br>Email: $email<br>Celular: $celular<br>Mensaje:<br>$mensaje";

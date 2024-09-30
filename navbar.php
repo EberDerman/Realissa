@@ -63,10 +63,10 @@
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="./img/logo realissa.png" alt="Menu" width="30" height="30">
+                <img src="./img/logo realissa.png" alt="Menu" width="50" height="auto">
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <img id="logo" src="./img/logo realissa.png" alt="logo" width="120" height="100" style="margin-left: 50px;">
+                <img id="logo" src="./img/logo realissa.png" alt="logo" width="120" height="auto" style="margin-left: 50px;">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="inicio">INICIO</a>
@@ -121,19 +121,32 @@
 
 <script>
     // Script para ocultar el menú en modo responsive al hacer clic en un enlace
-    document.addEventListener('DOMContentLoaded', function() {
-        var navLinks = document.querySelectorAll('.nav-link, .dropdown-item'); // Incluir todos los enlaces
-        var navbarCollapse = document.getElementById('navbarTogglerDemo03');
+    document.addEventListener('DOMContentLoaded', function () {
+    var navLinks = document.querySelectorAll('.nav-link, .dropdown-item'); // Incluir todos los enlaces
+    var dropdownLinks = document.querySelectorAll('.navbar-nav .dropdown-toggle'); // Enlaces de dropdown
+    var navbarCollapse = document.getElementById('navbarTogglerDemo03');
 
-        navLinks.forEach(function(link) {
-            link.addEventListener('click', function() {
-                if (window.innerWidth < 992) {
-                    var collapse = new bootstrap.Collapse(navbarCollapse, {
-                        toggle: true
-                    });
-                    collapse.hide();
-                }
-            });
+    // Para enlaces normales que no son dropdowns, colapsa el menú al hacer clic
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            // Solo colapsa si es un enlace dentro de un dropdown o si es un enlace común
+            if (!link.classList.contains('dropdown-toggle') && window.innerWidth < 992) {
+                var collapse = new bootstrap.Collapse(navbarCollapse, {
+                    toggle: true
+                });
+                collapse.hide();
+            }
         });
     });
+
+    // Para los dropdowns, evita que el menú colapse cuando se haga clic en ellos
+    dropdownLinks.forEach(function (dropdown) {
+        dropdown.addEventListener('click', function (e) {
+            // Evita el colapso del navbar al hacer clic en el dropdown
+            e.preventDefault();
+            e.stopPropagation(); // Evita que el evento cierre el menú
+        });
+    });
+});
+
 </script>
