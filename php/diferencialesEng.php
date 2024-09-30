@@ -18,7 +18,7 @@
             Housing demand exceeds supply
             Cape Coral, also known as the "American Venice," features <span class="numero">640</span> km of navigable canals, some of which
             have access to the Gulf of Mexico.
-            According to the Florida Economic Research Office, in 30-year population growth projections, Lee County (Cape Coral) is expected to grow
+            According to the Florida Economic Research Office, in <span class="numero">30</span>-year population growth projections, Lee County (Cape Coral) is expected to grow
             by <span class="numero">58.8</span>% by <span class="numero">2045</span>.
             This confirms the highest growth rate of any county in Florida.
         </p>

@@ -165,7 +165,7 @@ ul li + p {
         <li class="custom-list-item security"><strong>SECURITY</strong></li>
         <p>It has one of the lowest crime rates in the country.</p>
         <li class="custom-list-item nature"><strong>THE POWER OF NATURE</strong></li>
-        <p>Developments are located by the water and nature. It has over 640 km of canals.</p>
+        <p>Developments are located by the water and nature. It has over <span class="numero">640</span> km of canals.</p>
         <li class="custom-list-item education"><strong>FREE AND QUALITY EDUCATION</strong></li>
         <p>The average and standards of education in institutions are high in training and quality. Additionally, there is broad freedom to send children to the public school of each family's choice.</p>
         <li class="custom-list-item single-family-homes"><strong>SINGLE-FAMILY HOMES</strong></li>

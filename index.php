@@ -65,23 +65,25 @@
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
                     aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <img src="./img/logo realissa.png" alt="Menu" width="30" height="30">
+                    <img src="./img/logo realissa.png" alt="Menu" width="30" height="auto">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <img id="logo" src="./img/logo realissa.png" alt="logo" width="120" height="100" style="margin-left: 50px;">
+                    <img id="logo" src="./img/logo realissa.png" alt="logo" width="120" height="auto" style="margin-left: 50px;">
 
                 </div>
             </div>
+
+            
         </nav>
     </header>
-
+<!--
     <main class="container text-center">
         <div class="row g-4 justify-content-center m-3">
-            <div class="col-12 col-md-5 mb-4 textoComponentes">
+            <div class="col-12 col-md-5 mb-4 textoComponentes" style="height: 30vh;">
                 <div class="espanol">
-                    <h1>Bienvenido a Reallissa</h1>
-                    <a href="indexEsp.php"><img src="img/españa.png" alt="" class="img-fluid"></a>
-                    <h3>Click en la bandera para elegir idioma</h3>
+                    <h1 style="font-size: 25px;">Bienvenido a Reallissa</h1>
+                    <a href="indexEsp.php"><img src="img/españa.png" alt="" class="img-fluid" style="width: 100px;"></a>
+                    <h3 style="font-size: 25px;">Click en la bandera para elegir idioma</h3>
                 </div>
             </div>
             <div class="col-12 col-md-2 mb-4">
@@ -96,8 +98,12 @@
             </div>
         </div>
     </main>
-
-
+    -->
+<main>
+    <div class="container d-flex justify-content-center align-content-center"style="margin-top: -100px;">
+    <img src="./img/logo realissa.png" alt="Menu" width="300vw" height="auto">
+    </div>
+</main>
 
 
 </body>
