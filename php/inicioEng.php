@@ -94,33 +94,33 @@
     }
 </style>
 
-
 <div class="container mt-5">
     <div class="row">
         <!-- Columna para el formulario -->
         <div class="col-md-7 mb-4 formulario numero">
             <h2 class="mb-4 text-center">Contact Us</h2>
-            <form action="form/process_form.php" method="post">
+            <form action="php/process_form.php" method="post">
                 <div class="row mb-3">
                     <div class="col">
-                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="First Name" required>
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required>
+                        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Last Name" required>
                     </div>
                 </div>
                 <div class="mb-3">
                     <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="mb-3">
-                    <input type="tel" class="form-control" id="celular" name="celular" placeholder="Celular" pattern="\d{10,15}" required>
+                    <input type="tel" class="form-control" id="celular" name="celular" placeholder="Phone Number" pattern="\d{10,15}" required>
                 </div>
                 <div class="mb-3">
-                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Write your message here" required></textarea>
                 </div>
                 <button type="submit" onclick="sendEmail()" class="btn btn-primary">Send</button>
             </form>
         </div>
+
 
         <!-- Columna para contacto -->
         <div class="col-md-5">
@@ -130,7 +130,7 @@
                     <ul class="list-unstyled">
                         <li><i class="bi bi-telephone"></i> Tel:+1(329)460-4750</li>
                         <li><i class="bi bi-telephone"></i> Tel:+54(9)351 233-9134</li>
-                        <li><i class="bi bi-envelope"></i> contacto@realissa.com</li>
+                        <li><i class="bi bi-envelope"></i> contacto@realissadevelopments.com</li>
                         <li><i class="bi bi-instagram"></i> @realissa.ok</li>
                         <li><i class="bi bi-geo-alt"></i> 606 SE 10TH St., Cape Coral, FL 33909</li>
                         <div class="mapa">
@@ -142,3 +142,13 @@
         </div>
     </div>
 </div>
+<script>
+    // Show success alert if there is a message in the URL
+    <?php if (isset($_GET['mensaje'])): ?>
+        <?php if ($_GET['mensaje'] == 'success'): ?>
+            alert('Your message has been successfully sent. Thank you for contacting us!');
+        <?php else: ?>
+            alert('Error sending the message. Please try again.');
+        <?php endif; ?>
+    <?php endif; ?>
+</script>

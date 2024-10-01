@@ -133,7 +133,7 @@
             <i class="bi bi-linkedin"></i>
         </a>
         <!-- Correo Electrónico -->
-        <a href="mailto:tucorreo@dominio.com" class="email" data-content="dilucaobrasyservicios@gmail.com">
+        <a href="mailto:contacto@realissadevelopments.com" class="email" data-content="contacto@realissadevelopments.com">
             <i class="bi bi-envelope"></i>
         </a>
     </div>
