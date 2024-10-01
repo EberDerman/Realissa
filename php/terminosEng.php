@@ -2,7 +2,7 @@
 
 
     <div class="col-md-7 mb-4 textoComponentes">
-        <h2 class="mb-4">TERMS TO FAMILIARIZE YOURSELF WITH BUSINESS IN THE USA</h2>
+        <h2 class="mb-4">TERMS TO FAMILIARIZE YOURSELF <br>WITH BUSINESS IN THE USA</h2>
 
         <h4>EIN</h4>
         <p>An Employer Identification Number (EIN) is a unique number assigned to business entities operating in the United States.</p>

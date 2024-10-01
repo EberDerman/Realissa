@@ -12,12 +12,12 @@
 body {
     font-family: 'Heading Pro Trial', sans-serif;
 }
-body p{
-    font-family: 'Arial', sans-serif;
+p {
+    font-family: 'Arial', sans-serif !important; /* Agregar !important si es necesario */
 }
 
-li{
-    font-family: 'Arial', sans-serif;
+li {
+    font-family: 'Arial', sans-serif !important; /* Agregar !important si es necesario */
 }
 
 html,

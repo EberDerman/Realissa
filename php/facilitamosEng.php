@@ -4,12 +4,14 @@
 
     }
 
-    .facilitamos-items img {
-        width: 100px;
-        height: 100px;
+    .facilitamos-items img{
+        width: 110px;
+        height:110px;
+        padding: 20px ;
+       margin-left: -20px;
+
 
     }
-
 
     /* Media Queries para ajuste gradual */
     @media (max-width: 1200px) {

@@ -61,7 +61,7 @@
 
         .texto-disenos {
             width: 100%;
-            text-align: center;
+            text-align: left;
             order: -1;
         }
     }
@@ -86,7 +86,7 @@
         .texto-disenos {
             width: 100%;
             padding: 0 1rem;
-            text-align: center;
+            text-align: left;
             order: -1;
             /* Coloca el texto arriba del carrusel */
         }

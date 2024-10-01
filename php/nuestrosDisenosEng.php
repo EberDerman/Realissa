@@ -60,7 +60,7 @@
 
         .texto-disenos {
             width: 100%;
-            text-align: center;
+            text-align: left;
             order: -1;
         }
     }
@@ -85,7 +85,7 @@
         .texto-disenos {
             width: 100%;
             padding: 0 1rem;
-            text-align: center;
+            text-align: left;
             order: -1;
             /* Coloca el texto arriba del carrusel */
         }
@@ -147,7 +147,7 @@
         </button>
     </div>
     <div class="texto-disenos col-4">
-        <h2 class="mb-4">Our Designs</h2>
+        <h2 class="mb-4 text-center">Our Designs</h2>
         <p>
             We tailor property models according to the investment strategy regarding size and specific requirements of each location.
             At Realissa, we specialize in finding the best investment options by aligning with the economic dynamics of the countries

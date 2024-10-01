@@ -31,7 +31,7 @@
         /* Espaciado inicial para pantallas grandes */
     }
 
-   
+
     .redes a {
         display: flex;
         align-items: center;
@@ -64,7 +64,7 @@
     }
 
     /* Efecto hover */
-    
+
     .whatsapp a:hover .whatsapp-icon {
         transform: translateY(-5px);
         /* Mueve el ícono 5px hacia arriba */
@@ -114,10 +114,11 @@
 
 <footer class="custom-footer">
     <div class="whatsapp">
-        <a href="https://wa.me/12394604750" target="_blank">
+        <a href="whatsapp://send?phone=12394604750" target="_blank">
             <img src="./Iconos/whatsappIcon.png" alt="WhatsApp" class="whatsapp-icon">
         </a>
     </div>
+
     <div class="redes">
         <!-- instagram -->
         <a href="https://www.instagram.com/realissa.ok" class="instagram" data-content="realissa.ok">
