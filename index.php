@@ -50,10 +50,58 @@
             /* Color de texto blanco para contraste */
         }
 
+        .textoComponente {
+            height: 15vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
+            background-color: rgba(255, 255, 255, 0.80);
+            color: black;
+
+            border-radius: 6px;
+            padding: 30px;
+
+        }
+
+        .textoComponente p {
+            text-align: left;
+        }
+
+
+        .textoComponente h2 {
+            padding-bottom: 50px;
+            text-align: center;
+
+        }
+
+
+
+        /*logo index*/
+        @media (max-width: 1366px) {
+
+            .logoIndex {
+                width: 27vw;
+                height: auto;
+            }
+        }
+
+        @media (min-width:1366px) {
+
+            .logoIndex {
+                width: 22vw;
+                height: auto;
+            }
+        }
 
         /* Ocultar el logo en modo responsive */
         @media (max-width: 992px) {
+
+            .logoIndex {
+                width: 80vw;
+                height: auto;
+            }
+
             #logo {
                 display: none;
             }
@@ -79,19 +127,19 @@
 
     <main class="container text-center">
 
-        <div class="container d-flex justify-content-center align-content-center" >
-            <img src="./img/logo realissa.png" alt="Menu" width="370vw" height="auto">
+        <div class="container d-flex justify-content-center align-content-center">
+            <img src="./img/logo realissa.png" alt="Menu" class="logoIndex">
         </div>
         <div class="row g-4 justify-content-center m-3">
-            <div class="col-12 col-md-2 mb-4 textoComponentes" style="height: 20vh; display: flex; flex-direction:column; justify-content: center;">
+            <div class="col-6 col-md-2 mb-4 textoComponente">
                 <div class="espanol">
 
-                    <a href="indexEsp.php"><img src="img/españa.png" alt="" class="img-fluid" style="width: 100px;"></a>
+                    <a href="indexEsp.php"><img src="img/españa.png" alt="" class="img-fluid"></a>
 
                 </div>
             </div>
-          
-            <div class="col-12 col-md-2 mb-4 textoComponentes" style="height: 20vh;display: flex; flex-direction:column; justify-content: center;">
+
+            <div class="col-6 col-md-2 mb-4 textoComponente">
                 <div class="english">
 
                     <a href="indexEng.php"><img src="img/usa.png" alt="" class="img-fluid"></a>
@@ -101,7 +149,7 @@
         </div>
     </main>
 
-    
+
 
 
 </body>

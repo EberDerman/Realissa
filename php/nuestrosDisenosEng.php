@@ -14,6 +14,21 @@
         border-radius: 6px;
     }
 
+    .carousel-item {
+        text-align: center;
+        /* Esto asegura que todo dentro del carrusel esté centrado horizontalmente */
+    }
+
+    .imagen {
+        width: 70%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+        object-fit: cover;
+    }
+
+
     /* Estilos para pantallas grandes (PC) */
     @media (min-width: 992px) {
         .nuestrosDisenos {
@@ -91,36 +106,35 @@
 
         }
     }
-  
-     .numero{
+
+    .numero {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-
-
 </style>
 
 <div class="nuestrosDisenos row">
 
 
+
     <div id="carruselDisenos" class="carousel col-8 slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./img/disenos/bariloche.jpeg" class="d-block w-100" alt="Imagen 1">
+                <img src="./img/disenos/bariloche.jpg" class="d-block imagen" alt="Imagen 1">
             </div>
             <div class="carousel-item">
-                <img src="./img/disenos/carilo.jpeg" class="d-block w-100" alt="Imagen 2">
+                <img src="./img/disenos/carilo.jpg" class="d-block imagen" alt="Imagen 2">
             </div>
             <div class="carousel-item">
-                <img src="./img/disenos/cordoba.jpeg" class="d-block w-100" alt="Imagen 3">
+                <img src="./img/disenos/cordoba.jpg" class="d-block imagen" alt="Imagen 3">
             </div>
             <div class="carousel-item">
-                <img src="./img/disenos/duplex.jpeg" class="d-block w-100" alt="Imagen 4">
+                <img src="./img/disenos/duplex.jpg" class="d-block imagen" alt="Imagen 4">
             </div>
             <div class="carousel-item">
-                <img src="./img/disenos/marDelPlata.jpeg" class="d-block w-100" alt="Imagen 5">
+                <img src="./img/disenos/marDelPlata.jpg" class="d-block imagen" alt="Imagen 5">
             </div>
             <div class="carousel-item">
-                <img src="./img/disenos/tucuman.jpeg" class="d-block w-100" alt="Imagen 6">
+                <img src="./img/disenos/tucuman.jpg" class="d-block imagen" alt="Imagen 6">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carruselDisenos" data-bs-slide="prev">
