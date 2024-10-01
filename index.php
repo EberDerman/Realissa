@@ -73,37 +73,35 @@
                 </div>
             </div>
 
-            
+
         </nav>
     </header>
-<!--
+
     <main class="container text-center">
+
+        <div class="container d-flex justify-content-center align-content-center" >
+            <img src="./img/logo realissa.png" alt="Menu" width="370vw" height="auto">
+        </div>
         <div class="row g-4 justify-content-center m-3">
-            <div class="col-12 col-md-5 mb-4 textoComponentes" style="height: 30vh;">
+            <div class="col-12 col-md-2 mb-4 textoComponentes" style="height: 20vh; display: flex; flex-direction:column; justify-content: center;">
                 <div class="espanol">
-                    <h1 style="font-size: 25px;">Bienvenido a Reallissa</h1>
+
                     <a href="indexEsp.php"><img src="img/españa.png" alt="" class="img-fluid" style="width: 100px;"></a>
-                    <h3 style="font-size: 25px;">Click en la bandera para elegir idioma</h3>
+
                 </div>
             </div>
-            <div class="col-12 col-md-2 mb-4">
-                
-            </div>
-            <div class="col-12 col-md-5 mb-4 textoComponentes">
+          
+            <div class="col-12 col-md-2 mb-4 textoComponentes" style="height: 20vh;display: flex; flex-direction:column; justify-content: center;">
                 <div class="english">
-                    <h1>Welcome to Reallissa</h1>
+
                     <a href="indexEng.php"><img src="img/usa.png" alt="" class="img-fluid"></a>
-                    <h3>Click on the flag to select your language</h3>
+
                 </div>
             </div>
         </div>
     </main>
-    -->
-<main>
-    <div class="container d-flex justify-content-center align-content-center"style="margin-top: -100px;">
-    <img src="./img/logo realissa.png" alt="Menu" width="300vw" height="auto">
-    </div>
-</main>
+
+    
 
 
 </body>
