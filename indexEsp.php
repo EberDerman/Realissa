@@ -28,43 +28,4 @@
 
 
 </head>
-
-<body>
-    <!--incluir navbar-->
-    <?php include 'navbar.php'; ?>
-
-
-
-
-    <main id="main-content">
-        <?php include 'php/inicio.php'; ?>
-    </main>
-
-
-
-    <!--Incluir footer-->
-    <?php include 'footer.php'; ?>
-
-
-
-
-    <!--script bootstrap-->
-
-    <script src="./js/bootstrap/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-
-
-
-    <!--funciones main-->
-    <script src="./js/app.js"></script>
-
-
-    <!--funciones realState-->
-    <script src="./js/realState.js"></script>
-
-
-
-
-</body>
-
-</html>
+<body> <!--incluir navbar--> <?php include 'navbar.php'; ?> <main id="main-content"> <?php include 'php/inicio.php'; ?> </main> <!--Incluir footer--> <?php include 'footer.php'; ?> <!--script bootstrap--> <script src="./js/bootstrap/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> <!--funciones main--> <script src="./js/app.js"></script> <!--funciones realState--> <script src="./js/realState.js"></script></body></html>

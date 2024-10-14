@@ -1,0 +1,97 @@
+.numero {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.customs-items {
+    list-style: none; /* Elimina los puntos de lista predeterminados */
+    display: flex; /* Flexbox para alinear la imagen y el texto */
+    align-items: center; /* Alinea el contenido al centro verticalmente */
+    justify-content: flex-start; /* Alinea el contenido al inicio del contenedor */
+    height: 65px; /* Altura inicial */
+    margin-bottom: 10px; /* Espacio inferior entre los ítems */
+    transition: height 0.3s ease; /* Transiciones suaves para altura */
+    gap: 20px; /* Espacio entre los elementos hijos */
+}
+
+/* Estilo específico para los iconos */
+.customs-items img {
+    width: 50px; /* Ajusta el tamaño de la imagen según lo necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Contenedor adicional para los textos */
+.customs-text {
+    display: flex; /* Usar flexbox para alinear los h4 */
+    flex-direction: column; /* Alinear los h4 en columna */
+}
+
+/* Ajustes para los h4 */
+h4 {
+    font-size: 1.5rem; /* Tamaño base del texto */
+    margin: 0; /* Elimina márgenes predeterminados */
+}
+
+/* Media Queries para ajustar el tamaño de los h4 en diferentes dispositivos */
+@media (max-width: 1200px) {
+    h4 {
+        font-size: 1.25rem; /* Reduce el tamaño para pantallas más pequeñas */
+    }
+
+    .customs-items {
+        height: 50px; /* Ajusta la altura del item */
+    }
+}
+
+@media (max-width: 992px) {
+    h4 {
+        font-size: 1rem; /* Sigue reduciendo el tamaño */
+    }
+
+    .customs-items {
+        height: 40px; /* Ajusta la altura del item */
+    }
+}
+
+@media (max-width: 768px) {
+    h4 {
+        font-size: 0.9rem; /* Aumenta la reducción para dispositivos móviles */
+    }
+
+    .customs-items {
+        height: auto; /* Permite que la altura sea automática */
+    }
+
+    .customs-text {
+        flex-direction: column; /* Mantiene los textos en columna */
+    }
+}
+
+@media (max-width: 576px) {
+    h4 {
+        font-size: 0.8rem; /* Tamaño final para pantallas muy pequeñas */
+    }
+
+    .customs-items {
+        height: auto; /* Permite que la altura sea automática */
+    }
+}
+
+/* Estilo para los párrafos */
+ul li + p {
+    margin-top: 0;
+    margin-left: 60px; /* Alinea el párrafo debajo del texto del li */
+}
+
+/* Ajuste del párrafo para dispositivos móviles */
+@media (max-width: 768px) {
+    ul li + p {
+        margin-left: 35px; /* Alinea el párrafo debajo del texto del li para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    ul li + p {
+        margin-left: 25px; /* Alinea el párrafo debajo del texto del li para pantallas extra pequeñas */
+    }
+}

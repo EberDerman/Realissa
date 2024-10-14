@@ -13,3 +13,5 @@ RewriteRule ^inicio$ /inicio.php [L]
 # Asegurarse de que los archivos y directorios existentes no se vean afectados
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+
+
