@@ -12,12 +12,13 @@
 body {
     font-family: 'Heading Pro Trial', sans-serif;
 }
-p {
-    font-family: 'Arial', sans-serif !important; /* Agregar !important si es necesario */
+
+body p {
+    font-family: 'Arial', sans-serif;
 }
 
 li {
-    font-family: 'Arial', sans-serif !important; /* Agregar !important si es necesario */
+    font-family: 'Arial', sans-serif;
 }
 
 html,
@@ -34,14 +35,17 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+
 }
 
 /* Estilo para el fondo blanco */
 body.background-white {
-    background-color: white;
-    background-image: none;
-    /* Elimina la imagen de fondo */
+    background-color: white !important;
+    /* Añade !important para asegurarte que se aplique */
+    background-image: none !important;
 }
+
 
 /* El contenedor principal ocupa todo el espacio disponible */
 .wrapper {
@@ -51,9 +55,15 @@ body.background-white {
 }
 
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: grey !important;
 }
+
 /*-----------------------------main--------------------------------------*/
 
 main {
@@ -94,8 +104,7 @@ main {
     /* Color de las letras del placeholder */
 }
 
-.formulario,
-.contacto {
+.formulario {
 
     background-color: rgba(255, 255, 255, 0.80);
     /* Color de fondo con transparencia */
@@ -114,17 +123,37 @@ main {
 
 }
 
+.contacto {
+    .contacto {
+        background-color: rgba(255, 255, 255, 0.80);
+        color: black;
+        text-align: left;
+        border-radius: 6px;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 100%;
+        /* Permitir que el ancho máximo sea el 100% del contenedor padre */
+        width: auto;
+        /* Se ajusta al tamaño del contenido */
+        min-width: 300px;
+        /* Un ancho mínimo si lo prefieres, pero opcional */
+        box-sizing: border-box;
+        /* Asegura que el padding esté incluido en el cálculo del ancho */
+    }
+
+}
 
 /*-------------------------------texto plano-----------------------------------*/
 
 .textoComponentes {
     background-color: rgba(255, 255, 255, 0.80);
     color: black;
-    
+
     border-radius: 6px;
     padding: 50px;
-    
+
 }
+
 .textoComponentes p {
     text-align: left;
 }
