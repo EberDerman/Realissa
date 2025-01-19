@@ -108,6 +108,23 @@
             width: 100px;
             height: auto;
         }
+
+        @media only screen and (orientation: landscape) {
+
+            /* Estilos para cuando el dispositivo esté en orientación horizontal */
+            .logoIndex {
+                width: 30vw;
+                /* Cambiar el tamaño del logo cuando esté en landscape */
+            }
+
+            .textoComponente {
+                height: 25vh;
+                width: 20vw !important;
+                margin: 5px;
+                padding: 20px;
+                /* Ajustar el padding en modo horizontal */
+            }
+        }
     </style> <!-- Defer non-critical CSS (like Bootstrap and custom styles) -->
     <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" media="print" onload="this.media='all'"> <noscript>
         <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">

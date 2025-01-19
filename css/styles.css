@@ -30,13 +30,16 @@ body {
 
 
 
+
+}
+body{
+
+
     background-image: url('./../img/background.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-
 }
 
 /* Estilo para el fondo blanco */

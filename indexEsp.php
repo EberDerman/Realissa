@@ -30,8 +30,6 @@
     <link rel="stylesheet" href="./css/styles.min.css">
 
 
-
-
 </head>
 
 <body> <!--incluir navbar--> <?php include 'navbar.php'; ?> <main id="main-content"> <?php include 'php/inicio.php'; ?> </main> <!--Incluir footer--> <?php include 'footer.php'; ?> <!--script bootstrap-->
