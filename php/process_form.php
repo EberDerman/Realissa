@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Destinatario del correo
-    $destinatario = "formulario@realissadevelopments.com"; // Cambia esto por tu dirección de correo electrónico
+    $destinatario = ""; // Cambia esto por tu dirección de correo electrónico
     $asunto = "Nuevo mensaje de contacto";
 
     // Contenido del mensaje

@@ -18,8 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.donweb.com'; // Host SMTP de DonWeb
         $mail->SMTPAuth = true;          // Activar autenticación SMTP
-        $mail->Username = 'formulario@realissadevelopments.com'; // Tu dirección de correo
-        $mail->Password = 'w6@cU@c2mT'; // Tu contraseña de correo
+        $mail->Username = ''; // Tu dirección de correo
+        $mail->Password = ''; // Tu contraseña de correo
         $mail->SMTPSecure = 'tls';       // Habilitar cifrado TLS
         $mail->Port = 587;               // Puerto 587 para TLS
 
